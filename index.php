@@ -32,11 +32,18 @@ echo json_encode($usuarios);
 //echo $aluno;
 
 //Atualiza usuário com UPDATE
+//$usuario = new Usuario();
+
+//$usuario->loadById(8);
+//$usuario->update("professor","1234");
+
+//echo $usuario;
+
+//Deleta um usuário 
 $usuario = new Usuario();
 
-$usuario->loadById(8);
-$usuario->update("professor","1234");
+$usuario->loadById(7);
+$usuario->delete();
 
 echo $usuario;
-
 ?>
